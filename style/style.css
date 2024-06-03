@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://use.typekit.net/rir2lud.css");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  /* display: block; */
+  /* overflow-x: hidden; */
+  font-family: "Montserrat", sans-serif;
+  /* width: 100vw; */
+}
+:root {
+  --fonte-principal: "Montserrat", sans-serif;
+  --font-secundaria: "amandine", sans-serif;
+  --verde: #4e523f;
+  --bege: #927b4f;
+  --cinza: #f4f5ef;
+}
+
+.btn {
+  width: 255px;
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--fonte-principal);
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+  background: transparent linear-gradient(90deg, #927b4f 0%, #ddc28f 100%);
+  padding: 16px 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.btn:hover svg {
+  rotate: -30deg;
+  clip-path: var(--verde);
+  transition: 0.5s ease;
+}
+
+.btn:hover svg path {
+  fill: #4e523f;
+  transition: 0.2s ease;
+}
+
+.btn:hover a {
+  color: var(--verde);
+  transition: 0.2s ease;
+}
+
+.btn a {
+  text-decoration: none;
+  color: white;
+  margin: 6px 0;
+  padding: 0;
+}
+
+.t-bg:hover {
+  background-color: #927b4f;
+
+  transition: 1s ease;
+}
+
+/* COOKIES */
+.cookies-msg {
+  width: 80%;
+  background-color: var(--cinza);
+  position: fixed;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 6px;
+  display: none;
+}
+
+.cookies-msg.mostrar {
+  display: block;
+}
+
+.cookies-msg .cookies-txt {
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  padding: 32px;
+}
+
+.cookies-txt p {
+  font-family: var(--fonte-principal);
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.cookies-msg .cookies-btn {
+  margin-left: 32px;
+}
+
+.cookies-msg .cookies-btn button {
+  background-color: var(--verde);
+  color: white;
+  font-weight: 700;
+  font-size: 22px;
+  padding: 10px 40px;
+  border-radius: 0;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.cookies-msg .cookies-btn button:hover {
+  transform: scale(0.9);
+}

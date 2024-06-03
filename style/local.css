@@ -1,0 +1,75 @@
+.local {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.local_content {
+  background-color: var(--verde);
+  width: 50%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/img/bg_sobre.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.local_content-item {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  max-width: 80%;
+}
+
+.local_content h2 {
+  font-family: var(--font-secundaria);
+  font-size: 3.8rem;
+  max-width: 80%;
+}
+
+.local_map {
+  width: 50%;
+}
+.local_map iframe {
+  width: 100%;
+  height: 600px;
+}
+
+.local_end {
+  display: flex;
+  gap: 16px;
+}
+
+.local_end p {
+  font-family: var(--fonte-primaria);
+  font-size: 16px;
+  line-height: 24px;
+  width: 40%;
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+  .local {
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .local_content {
+    width: 100%;
+  }
+
+  .local_map {
+    width: 100%;
+  }
+
+  .local_content h2 {
+    max-width: 100%;
+  }
+}

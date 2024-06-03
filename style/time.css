@@ -1,0 +1,229 @@
+.time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 800px;
+  position: relative;
+  overflow: hidden;
+}
+
+.time::before {
+  content: url(/img/bg_sobre.webp);
+  position: absolute;
+  left: -15%;
+  top: -20%;
+  opacity: 70%;
+  z-index: -1;
+}
+
+.radio {
+  padding: 0 1rem;
+}
+
+.time_aling {
+  max-width: 1440px;
+
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.time_title {
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  gap: 32px;
+  height: 800px;
+}
+
+.time_title h2 {
+  color: var(--verde);
+  font-family: var(--font-secundaria);
+  font-size: 3.5rem;
+  max-width: 90%;
+  padding: 0 1rem;
+  margin-left: 1.5rem;
+}
+
+.time_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  width: 70%;
+  height: 800px;
+}
+
+.nome {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-family: var(--font-secundaria);
+  font-size: 32px;
+  color: var(--verde);
+  padding: 0 1rem;
+}
+
+.cargo {
+  font-family: var(--fonte-principal);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--bege);
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-family: var(--fonte-principal);
+  font-size: 16px;
+  line-height: 20px;
+  padding: 0 1rem;
+  width: 90%;
+}
+
+.social {
+  padding: 0 1rem;
+}
+
+button {
+  border-radius: 100%;
+  background-color: transparent;
+  border: transparent;
+}
+
+button:checked {
+  background-size: 100px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.carlos {
+  position: relative;
+  z-index: 0;
+}
+
+.carlos::after {
+  content: url(/img/carlos-br.png);
+  position: absolute;
+  top: 0%;
+  left: 15%;
+}
+
+.thamires {
+  position: relative;
+  z-index: 0;
+}
+
+.thamires::after {
+  content: url(/img/thami-bg.png);
+  position: absolute;
+  top: 0%;
+  left: 15%;
+}
+
+.image-thami-conteudo {
+  position: absolute;
+  top: -30%;
+  left: -50%;
+  z-index: -1;
+  opacity: 30%;
+}
+#thamires-content {
+  display: none;
+}
+
+.content {
+  display: none;
+}
+
+.button {
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin: 5px;
+  padding: 0;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.button img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"]:checked + .button {
+  width: 100px;
+  height: 100px;
+  border: 6px solid #927b4f;
+}
+
+@media (min-width: 1158px) {
+  .time {
+    height: 700px;
+  }
+
+  .time_title {
+    width: 50%;
+    padding: 12rem 0 2rem 0;
+  }
+
+  .time_content {
+    /* height: 90vh; */
+    width: 50%;
+    /* height: 100vh; */
+  }
+
+  .description p {
+    max-width: 440px;
+  }
+}
+
+@media (max-width: 1158px) {
+  .time::before {
+    left: 75%;
+    top: -20%;
+    opacity: 70%;
+  }
+
+  .thamires::after {
+    content: "";
+  }
+  .carlos::after {
+    content: "";
+  }
+
+  .time_aling {
+    flex-direction: column;
+    height: 700px;
+    width: 90%;
+    gap: 32px;
+  }
+
+  .time_content {
+    width: 100%;
+    height: fit-content;
+
+    /* margin: 0 32px; */
+  }
+
+  .time_title {
+    height: fit-content;
+  }
+
+  .time_title h2 {
+    padding: 0;
+  }
+
+  .description {
+    width: 100%;
+  }
+}
