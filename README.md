@@ -2,7 +2,7 @@
 
 Website responsivo para a clínica Essenza, especializada em saúde e bem-estar.
 
-![](https://raw.githubusercontent.com/edsondiasjunior/sucessoescolar/refs/heads/main/public/mockup_desktop.png)
+![](https://github.com/edsondiasjunior/essenza/blob/main/img/mockup_essenza.png)
 
 ## Sobre o Projeto
 
