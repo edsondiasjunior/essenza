@@ -2,6 +2,8 @@
 
 Website responsivo para a clínica Essenza, especializada em saúde e bem-estar.
 
+![](https://raw.githubusercontent.com/edsondiasjunior/sucessoescolar/refs/heads/main/public/mockup_desktop.png)
+
 ## Sobre o Projeto
 
 Site institucional para a clínica Essenza, especializada em saúde e bem-estar. Projeto desenvolvido pela **Brand Connect**. Meu papel no projeto foi a implementação utilizando HTML5, CSS3 e JavaScript, transformando o design em um website responsivo e acessível.
