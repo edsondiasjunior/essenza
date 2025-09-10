@@ -1,5 +1,4 @@
 # Essenza - Website
-
 Website responsivo para a clínica Essenza, especializada em saúde e bem-estar.
 
 ![](https://github.com/edsondiasjunior/essenza/blob/main/img/mockup_essenza.png)
